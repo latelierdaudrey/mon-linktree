@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L’Atelier d’Audrey – Beauté du Regard</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #d4c8bb;
+      color: #2e2e2e;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1.2s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .container { max-width: 600px; margin: 0 auto; padding: 30px 20px; }
+    .logo img { max-width: 250px; border-radius: 50%; margin-top: 40px; transition: transform 0.3s ease; }
+    .logo img:hover { transform: scale(1.05); }
+    h1 { font-size: 1.9em; margin-top: 20px; font-weight: 500; letter-spacing: 1px; color: #3e3e3e; }
+    p { font-size: 1.05em; color: #5c5348; margin-bottom: 35px; font-style: italic; }
+    .links a {
+      display: block; position: relative;
+      background: linear-gradient(145deg, #d6c6a8, #bda77b);
+      color: #fff; text-decoration: none; font-weight: 500;
+      padding: 14px 0; margin: 12px auto; width: 85%; border-radius: 40px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15); overflow: hidden; transition: all 0.4s ease;
+    }
+    .links a::before {
+      content: ""; position: absolute; top: 0; left: -75%; width: 50%; height: 100%;
+      background: rgba(255,255,255,0.4); transform: skewX(-25deg); transition: left 0.6s ease;
+    }
+    .links a:hover::before { left: 125%; }
+    .links a:hover { background: linear-gradient(145deg, #e8d8a5, #cbb37e); transform: translateY(-3px); box-shadow: 0 5px 10px rgba(0,0,0,0.2); }
+    footer { margin-top: 45px; color: #a8957d; font-size: 0.9em; }
+    .socials { margin-top: 25px; }
+    .socials a { margin: 0 10px; color: #bda77b; font-size: 1.6em; text-decoration: none; transition: color 0.3s, transform 0.3s; }
+    .socials a:hover { color: #e2c985; transform: scale(1.2); }
+    @media (max-width: 600px) {
+      .logo img { max-width: 180px; margin-top: 25px; }
+      h1 { font-size: 1.6em; }
+      .links a { width: 90%; font-size: 1em; }
+      p { font-size: 0.95em; }
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="ton-logo.png" alt="Logo L'Atelier d'Audrey">
+    </div>
+
+    <h1>L’Atelier d’Audrey</h1>
+    <p>Spécialisée en beauté du regard — cils, sourcils & ongles</p>
+
+    <div class="links">
+      <a href="https://www.planity.com/escale-beaute-laurine-38780-septeme?fbclid=PAb21jcANe2lJleHRuA2FlbQIxMQABp89_1So6dyCmFMoVzyx1QCXhrCwp_NOD4Nbb4RGcqLvHUrixbYSQh3E7f_XV_aem_iu7IY4-8ORzMjgcWd0U7aw" target="_blank" rel="noopener noreferrer">💅 Prendre rendez-vous sur Planity</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">✨ Extensions de cils</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">🌸 Rehaussement de cils</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">🎯 Microblading</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">🖤 Powderbrow</a>
+      <a href="#" target="_blank" rel="noopener noreferrer">💅 Prothésie ongulaire (bientôt)</a>
+    </div>
+
+    <footer>
+      <div class="socials">
+        <a href="https://instagram.com/latelier_daudrey" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@latelier.daudrey16" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <p>© L’Atelier d’Audrey – 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
